@@ -10,8 +10,11 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
 - **Install.txt**: En el archivo install.txt que se encuentra en la raíz de repositorio "bbog-ctm-opencard-ctm". En este archivo se encuentran las instrucciones de ejecución; relacionando el nombre de las mallas de Control M a desplegar, de manera consecutiva (hacia abajo) una seguida de la otra sin dejar espacios.
 
   Ejemplo:
+
   OPESWTKN
+
   OPEDTRFA
+
   OPEDDCAF
 
   
