@@ -27,6 +27,7 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
   #OPEDTRFA
 
   OPEDDCAF
+
   La malla que NO se desplegara para este ejemplo es "OPEDTRFA".
 
 - **Carpetas de mallas**: En las carpetas con nombres de las mallas se encuentran los tres archivos .XML correspondientes a las mallas que serán
