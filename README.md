@@ -20,9 +20,10 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
   
   **Para NO desplegar una malla** Al colocar el símbolo "#" numeral antepuesto al nombre de la malla (sin espacios) se toma como instrucción: Que la malla no se desplegara.
   Ejemplo:
+  
   OPESWTKN
 
-  "#OPEDTRFA"
+  #OPEDTRFA
 
   OPEDDCAF
 
