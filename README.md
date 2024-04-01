@@ -12,9 +12,7 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
   Ejemplo:
 
   OPESWTKN
-
   OPEDTRFA
-
   OPEDDCAF
 
   
