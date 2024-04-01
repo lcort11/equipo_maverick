@@ -17,5 +17,5 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
   + **Staging** -> Pruebas
   + **Master** -> Producción
 ~~~ 
-  _README actualizado abril 01 de 2024_
+*README actualizado abril 01 de 2024*
 ~~~ 
