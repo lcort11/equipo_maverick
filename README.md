@@ -32,12 +32,9 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
 
 - **Carpetas de mallas**: En las carpetas con nombres de las mallas se encuentran los tres archivos .XML correspondientes a las mallas que serán
    desplegadas en los (3) tres ambientes así:
-  + **QA** -> Desarrollo
-  + **Staging** -> Pruebas
-  + **Master** -> Producción
+  Nombre carpeta malla: **OPESWTKN**
+  + **QA** -> Desarrollo, Ejemplo archivo .XML: OPESWTKNQ.xml
+  + **Staging** -> Pruebas, Ejemplo archivo .XML: OPESWTKNS.xml
+  + **Master** -> Producción, Ejemplo archivo .XML: OPESWTKNM.xml
   
   *README* actualizado abril 01 de 2024
-
-~~~ 
-*README* actualizado abril 01 de 2024
-~~~ 
