@@ -19,6 +19,7 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
 
   
   **Para NO desplegar una malla** Al colocar el símbolo "#" numeral antepuesto al nombre de la malla (sin espacios) se toma como instrucción: Que la malla no se desplegara.
+
   Ejemplo:
   
   OPESWTKN
@@ -26,6 +27,7 @@ Este repositorio contine una colección de mallas en control-M del aplicativo Op
   #OPEDTRFA
 
   OPEDDCAF
+  La malla que NO se desplegara para este ejemplo es "OPEDTRFA".
 
 - **Carpetas de mallas**: En las carpetas con nombres de las mallas se encuentran los tres archivos .XML correspondientes a las mallas que serán
    desplegadas en los (3) tres ambientes así:
