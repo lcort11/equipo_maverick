@@ -31,7 +31,10 @@ Esto seguún ubicación dada en la línea:
 **@./&1/ods_stag/**
 ~~~
  
- Ejemplo: @./&1/ods_stag/Procedure/FD_PR_GENARCH_TRX_EFECMC.sql  
+ Ejemplo: 
+ ~~~
+ @./&1/ods_stag/Procedure/FD_PR_GENARCH_TRX_EFECMC.sql
+~~~
  
  Compila el procedimiento almacenado FD_PR_GENARCH_TRX_EFECMC ejecutando el Script FD_PR_GENARCH_TRX_EFECMC.sql ubicado en la ruta ./&1/ods_stag/Procedure/
 
