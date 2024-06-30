@@ -28,31 +28,10 @@ F:
 └── README.md
 ~~~
 
-'bog-gid-onpods-copy-batch/'
-:
-├── SCRIPTS/
-│   ├── ODS/
-│   │   ├── AUTDWI/
-│   │   ├── BBSDWI/
-│   │   ├── BPM/
-│   │   ├── CANDWI/
-│   │   ├── CASTIGOS/
-│   │   ├── CRMDWI/
-│   │   ├── DISDWI/
-│   │   ├── ENDEUDAMIENTO/
-│   │   ├── IVRDWI/
-│   │   ├── MC/
-│   │   └── SARC/
-├──LOGS_PRODUCCION/
-│  └──ODS/
-│     └── HIS/
-└── README.md
-
 # Carpetas y rutas
   
-  **SCRIPTS:** Contiene los scripts de copia por lotes.
-  
-  ODS: Contiene los scripts específicos para cada módulo de ODS.
+    **SCRIPTS:** Contiene los scripts de copia por lotes.
+      ODS: Contiene los scripts específicos para cada módulo de ODS.
 AUTDWI: Ruta: F:/SCRIPTS/ODS/AUTDWI
 BBSDWI: Ruta: F:/SCRIPTS/ODS/BBSDWI
 BPM: Ruta: F:/SCRIPTS/ODS/BPM
