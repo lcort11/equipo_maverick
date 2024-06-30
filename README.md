@@ -1,41 +1,47 @@
-# equipo_maverick
-# bbog-ctm-opencard-ctm
+# bbog-gid-onpods-copy-batch
 
-# Mallas de Control-M aplicativo OpenCard
+# Artefactos del aplicativo FD ODS
 
-Este repositorio contine una colección de mallas en control-M del aplicativo OpenCard
+Este repositorio contiene un conjunto de scripts de copia por lotes (batch) que se utilizan para ejecución, respaldar y restaurar datos para el aplicativo ODS (On-Premise Data Store).
 
-## Contenido
+## Estructura del repositorio
 
-- **Install.txt**: En el archivo install.txt que se encuentra en la raíz de repositorio "bbog-ctm-opencard-ctm". En este archivo se encuentran las instrucciones de ejecución; relacionando el nombre de las mallas de Control M a desplegar, de manera consecutiva (hacia abajo) una seguida de la otra sin dejar espacios.
+bog-gid-onpods-copy-batch/
+F:
+├── SCRIPTS/
+│   ├── ODS/
+│   │   ├── AUTDWI/
+│   │   ├── BBSDWI/
+│   │   ├── BPM/
+│   │   ├── CANDWI/
+│   │   ├── CASTIGOS/
+│   │   ├── CRMDWI/
+│   │   ├── DISDWI/
+│   │   ├── ENDEUDAMIENTO/
+│   │   ├── IVRDWI/
+│   │   ├── MC/
+│   │   └── SARC/
+├──LOGS_PRODUCCION/
+│  └──ODS/
+│     └── HIS/
+└── README.md
 
-  Ejemplo:
+#Carpetas y rutas
+**SCRIPTS:** Contiene los scripts de copia por lotes.
+ODS: Contiene los scripts específicos para cada módulo de ODS.
+AUTDWI: Ruta: F:/SCRIPTS/ODS/AUTDWI
+BBSDWI: Ruta: F:/SCRIPTS/ODS/BBSDWI
+BPM: Ruta: F:/SCRIPTS/ODS/BPM
+CANDWI: Ruta: F:/SCRIPTS/ODS/CANDWI
+CASTIGOS: Ruta: F:/SCRIPTS/ODS/CASTIGOS
+CRMDWI: Ruta: F:/SCRIPTS/ODS/CRMDWI
+DISDWI: Ruta: F:/SCRIPTS/ODS/DISDWI
+ENDEUDAMIENTO: Ruta: F:/SCRIPTS/ODS/ENDEUDAMIENTO
+IVRDWI: Ruta: F:/SCRIPTS/ODS/IVRDWI
+MC: Ruta: F:/SCRIPTS/ODS/MC
+SARC: Ruta: F:/SCRIPTS/ODS/SARC
+**LOGS:** Contiene los archivos de registro.
+ODS: Ruta: F:/LOGS_PRODUCCION/ODS
+HIS: Ruta: F:/LOGS_PRODUCCION/ODS/HIS
 
-  OPESWTKN
-
-  OPEDTRFA
-
-  OPEDDCAF
-
-  
-  **Para NO desplegar una malla** Al colocar el símbolo "#" numeral antepuesto al nombre de la malla (sin espacios) se toma como instrucción: Que la malla no se desplegara.
-
-  Ejemplo:
-  
-  OPESWTKN
-
-  #OPEDTRFA
-
-  OPEDDCAF
-
-  La malla que NO se desplegara para este ejemplo es "OPEDTRFA".
-
-- **Carpetas de mallas**: En las carpetas con nombres de las mallas se encuentran los tres archivos .XML correspondientes a las mallas que serán
-   desplegadas en los (3) tres ambientes así:
-
-  Nombre carpeta malla: **OPESWTKN**
-  + **QA** -> Desarrollo, Ejemplo archivo .XML: OPESWTKNQ.xml
-  + **Staging** -> Pruebas, Ejemplo archivo .XML: OPESWTKNS.xml
-  + **Master** -> Producción, Ejemplo archivo .XML: OPESWTKNM.xml
-  
-  *README* actualizado abril 01 de 2024
+ *README* creado junio 28 de 2024
