@@ -25,7 +25,7 @@ bbog-gid-onpfdods-scripts-db/
 **INSTALL:sql**: Este Script ejecuta:
 - Instalacion cambiando SCHEMA actual a ***ods_stag***
 - Compilación Scripts
-- Compilacióm procedimientos almacenados
+- Compilación procedimientos almacenados
 - Compilación de paquetes modificados
 Esto seguún ubicación dada en la línea ***@./&1/ods_stag/***
 
