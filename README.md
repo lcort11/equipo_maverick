@@ -1,54 +1,32 @@
-# bbog-gid-onpfdods-copy-batch
+# # bbog-gid-onpfdods-scripts-db
 
-# Artefactos del aplicativo FD ODS
+# Artefactos del aplicativo FD ODS capa Base de Datos
 
-Este repositorio contiene un conjunto de scripts de copia por lotes (batch) que se utilizan para respaldar y restaurar datos para el aplicativo FD ODS.
+Este repositorio contiene scripts para la instalación y compilación de los mismos bajo el SCHEMA ***ods_stag*** para el aplicativo FD ODS capa BD. 
 
-# Estructura del repositorio
+## Estructura del repositorio
+El proyecto cuenta con la siguiente estructura de carpetas 
 
 ~~~
-bog-gid-onpfdods-copy-batch/
-F:
-├── SCRIPTS/
-│   ├── ODS/
-│   │   ├── AUTDWI/
-│   │   ├── BBSDWI/
-│   │   ├── BPM/
-│   │   ├── CANDWI/
-│   │   ├── CASTIGOS/
-│   │   ├── CRMDWI/
-│   │   ├── DISDWI/
-│   │   ├── ENDEUDAMIENTO/
-│   │   ├── IVRDWI/
-│   │   ├── MC/
-│   │   └── SARC/
-├──LOGS_PRODUCCION/
-│  └──ODS/
-│     └── HIS/
+bbog-gid-onpfdods-scripts-db/
+├── ods_stag/
+│   ├── Function/
+│   ├── Package/
+│   ├── PackageBody/
+│   ├── Procedure/
+│   ├── Scripts/
+│   ├── Trigger/
+│   ├── View/
+│   └── INSTALL.sql 
 └── README.md
 ~~~
 
-## Carpetas y rutas
   
-**SCRIPTS**: Contiene los scripts de copia por lotes.
-~~~
-ODS: Contiene los scripts específicos para cada módulo de ODS.
-AUTDWI: Ruta: F:/SCRIPTS/ODS/AUTDWI
-BBSDWI: Ruta: F:/SCRIPTS/ODS/BBSDWI
-BPM: Ruta: F:/SCRIPTS/ODS/BPM
-CANDWI: Ruta: F:/SCRIPTS/ODS/CANDWI
-CASTIGOS: Ruta: F:/SCRIPTS/ODS/CASTIGOS
-CRMDWI: Ruta: F:/SCRIPTS/ODS/CRMDWI
-DISDWI: Ruta: F:/SCRIPTS/ODS/DISDWI
-ENDEUDAMIENTO: Ruta: F:/SCRIPTS/ODS/ENDEUDAMIENTO
-IVRDWI: Ruta: F:/SCRIPTS/ODS/IVRDWI
-MC: Ruta: F:/SCRIPTS/ODS/MC
-SARC: Ruta: F:/SCRIPTS/ODS/SARC
-~~~
-  
-**LOGS_PRODUCCION**: Contiene los archivos de registro.
-~~~
-ODS: Ruta: F:/LOGS_PRODUCCION/ODS
-HIS: Ruta: F:/LOGS_PRODUCCION/ODS/HIS
-~~~
+**INSTALL:sql**: Este script ejecuta:
+- Instalacion cambiando SCHEMA actual a ***ods_stag***
+- Compilando scripts
+- Compilar procedimientos almacenados
+- Compilar paquetes modificados
+Esto seguún ubicación dada en la línea ***@./&1/ods_stag/***
+
  *README* creado junio 28 de 2024
