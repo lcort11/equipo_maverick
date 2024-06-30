@@ -7,28 +7,48 @@ Este repositorio contiene un conjunto de scripts de copia por lotes (batch) que 
 ## Estructura del repositorio
 
 bog-gid-onpods-copy-batch/
-F:
-├── SCRIPTS/
-│   ├── ODS/
-│   │   ├── AUTDWI/
-│   │   ├── BBSDWI/
-│   │   ├── BPM/
-│   │   ├── CANDWI/
-│   │   ├── CASTIGOS/
-│   │   ├── CRMDWI/
-│   │   ├── DISDWI/
-│   │   ├── ENDEUDAMIENTO/
-│   │   ├── IVRDWI/
-│   │   ├── MC/
-│   │   └── SARC/
-├──LOGS_PRODUCCION/
-│  └──ODS/
-│     └── HIS/
-└── README.md
+  
+  F:
+  
+  ├── SCRIPTS/
+  
+  │   ├── ODS/
+  
+  │   │   ├── AUTDWI/
+  
+  │   │   ├── BBSDWI/
+  
+  │   │   ├── BPM/
+  
+  │   │   ├── CANDWI/
+  
+  │   │   ├── CASTIGOS/
+  
+  │   │   ├── CRMDWI/
+  
+  │   │   ├── DISDWI/
+  
+  │   │   ├── ENDEUDAMIENTO/
+  
+  │   │   ├── IVRDWI/
+  
+  │   │   ├── MC/
+  
+  │   │   └── SARC/
+  ├──LOGS_PRODUCCION/
+  
+  │  └──ODS/
+  
+  │     └── HIS/
+  
+  └── README.md
 
-#Carpetas y rutas
-**SCRIPTS:** Contiene los scripts de copia por lotes.
-ODS: Contiene los scripts específicos para cada módulo de ODS.
+  
+  #Carpetas y rutas
+  
+  **SCRIPTS:** Contiene los scripts de copia por lotes.
+  
+  ODS: Contiene los scripts específicos para cada módulo de ODS.
 AUTDWI: Ruta: F:/SCRIPTS/ODS/AUTDWI
 BBSDWI: Ruta: F:/SCRIPTS/ODS/BBSDWI
 BPM: Ruta: F:/SCRIPTS/ODS/BPM
@@ -40,7 +60,8 @@ ENDEUDAMIENTO: Ruta: F:/SCRIPTS/ODS/ENDEUDAMIENTO
 IVRDWI: Ruta: F:/SCRIPTS/ODS/IVRDWI
 MC: Ruta: F:/SCRIPTS/ODS/MC
 SARC: Ruta: F:/SCRIPTS/ODS/SARC
-**LOGS:** Contiene los archivos de registro.
+  
+  **LOGS:** Contiene los archivos de registro.
 ODS: Ruta: F:/LOGS_PRODUCCION/ODS
 HIS: Ruta: F:/LOGS_PRODUCCION/ODS/HIS
 
