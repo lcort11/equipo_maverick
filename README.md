@@ -46,7 +46,7 @@ MC: Ruta: F:/SCRIPTS/ODS/MC
 SARC: Ruta: F:/SCRIPTS/ODS/SARC
 ~~~
   
-**LOGS:** Contiene los archivos de registro.
+**LOGS_PRODUCCION:** Contiene los archivos de registro.
 ~~~
 ODS: Ruta: F:/LOGS_PRODUCCION/ODS
 HIS: Ruta: F:/LOGS_PRODUCCION/ODS/HIS
