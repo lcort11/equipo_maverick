@@ -30,7 +30,7 @@ F:
 
 # Carpetas y rutas
   
-    **SCRIPTS:** Contiene los scripts de copia por lotes.
+    **SCRIPTS**: Contiene los scripts de copia por lotes.
       ODS: Contiene los scripts específicos para cada módulo de ODS.
 AUTDWI: Ruta: F:/SCRIPTS/ODS/AUTDWI
 BBSDWI: Ruta: F:/SCRIPTS/ODS/BBSDWI
