@@ -1,8 +1,8 @@
-# # bbog-gid-onpfdods-scripts-db
+# bbog-gid-onpfdods-scripts-db
 
 # Artefactos del aplicativo FD ODS capa Base de Datos
 
-Este repositorio contiene scripts para la instalación y compilación de los mismos bajo el SCHEMA ***ods_stag*** para el aplicativo FD ODS capa BD. 
+Este repositorio contiene scripts para la instalación y compilación de los mismos bajo el SCHEMA ***ods_stag***. 
 
 ## Estructura del repositorio
 El proyecto cuenta con la siguiente estructura de carpetas 
