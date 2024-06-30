@@ -28,7 +28,7 @@ F:
 └── README.md
 ~~~
 
-''bog-gid-onpods-copy-batch/'
+'bog-gid-onpods-copy-batch/'
 :
 ├── SCRIPTS/
 │   ├── ODS/
@@ -46,7 +46,7 @@ F:
 ├──LOGS_PRODUCCION/
 │  └──ODS/
 │     └── HIS/
-└── README.md''
+└── README.md
 
 # Carpetas y rutas
   
