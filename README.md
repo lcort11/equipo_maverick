@@ -2,7 +2,7 @@
 
 # Artefactos del aplicativo FD ODS capa Base de Datos
 
-Este repositorio contiene scripts para la instalación y compilación de los mismos bajo el SCHEMA ***ods_stag***. 
+Este repositorio contiene Scripts para la instalación y compilación de los mismos bajo el SCHEMA ***ods_stag***. 
 
 ## Estructura del repositorio
 El proyecto cuenta con la siguiente estructura de carpetas 
