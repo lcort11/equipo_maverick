@@ -35,7 +35,8 @@ bog-gid-onpods-copy-batch/
   │   │   ├── MC/
   
   │   │   └── SARC/
-  ├──LOGS_PRODUCCION/
+      
+      ├──LOGS_PRODUCCION/
   
   │  └──ODS/
   
@@ -44,7 +45,7 @@ bog-gid-onpods-copy-batch/
   └── README.md
 
   
-  #Carpetas y rutas
+  # Carpetas y rutas
   
   **SCRIPTS:** Contiene los scripts de copia por lotes.
   
