@@ -1,4 +1,4 @@
-# bbog-gid-onpods-copy-batch
+# bbog-gid-onpfdods-copy-batch
 
 # Artefactos del aplicativo FD ODS
 
@@ -7,7 +7,7 @@ Este repositorio contiene un conjunto de scripts de copia por lotes (batch) que 
 # Estructura del repositorio
 
 ~~~
-bog-gid-onpods-copy-batch/
+bog-gid-onpfdods-copy-batch/
 F:
 ├── SCRIPTS/
 │   ├── ODS/
