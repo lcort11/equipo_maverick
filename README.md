@@ -36,6 +36,6 @@ Esto seguún ubicación dada en la línea:
  @./&1/ods_stag/Procedure/FD_PR_GENARCH_TRX_EFECMC.sql
 ~~~
  
- Compila el procedimiento almacenado FD_PR_GENARCH_TRX_EFECMC ejecutando el Script FD_PR_GENARCH_TRX_EFECMC.sql ubicado en la ruta ./&1/ods_stag/Procedure/
+ Compila el procedimiento almacenado FD_PR_GENARCH_TRX_EFECMC ejecutando el Script .sql ubicado en la ruta **./&1/ods_stag/Procedure/**
 
  *README* creado junio 28 de 2024
