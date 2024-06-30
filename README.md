@@ -6,44 +6,27 @@ Este repositorio contiene un conjunto de scripts de copia por lotes (batch) que 
 
 ## Estructura del repositorio
 
+~~~
 bog-gid-onpods-copy-batch/
-  
-  F:
-  
-  ├── SCRIPTS/
-  
-  │   ├── ODS/
-  
-  │   │   ├── AUTDWI/
-  
-  │   │   ├── BBSDWI/
-  
-  │   │   ├── BPM/
-  
-  │   │   ├── CANDWI/
-  
-  │   │   ├── CASTIGOS/
-  
-  │   │   ├── CRMDWI/
-  
-  │   │   ├── DISDWI/
-  
-  │   │   ├── ENDEUDAMIENTO/
-  
-  │   │   ├── IVRDWI/
-  
-  │   │   ├── MC/
-  
-  │   │   └── SARC/
-      
-      ├──LOGS_PRODUCCION/
-  
-  │  └──ODS/
-  
-  │     └── HIS/
-  
-  └── README.md
-
+F:
+├── SCRIPTS/
+│   ├── ODS/
+│   │   ├── AUTDWI/
+│   │   ├── BBSDWI/
+│   │   ├── BPM/
+│   │   ├── CANDWI/
+│   │   ├── CASTIGOS/
+│   │   ├── CRMDWI/
+│   │   ├── DISDWI/
+│   │   ├── ENDEUDAMIENTO/
+│   │   ├── IVRDWI/
+│   │   ├── MC/
+│   │   └── SARC/
+├──LOGS_PRODUCCION/
+│  └──ODS/
+│     └── HIS/
+└── README.md
+~~~
   
   # Carpetas y rutas
   
