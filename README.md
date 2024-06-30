@@ -26,7 +26,8 @@ bbog-gid-onpfdods-scripts-db/
 - Compilación Scripts
 - Compilación procedimientos almacenados
 - Compilación de paquetes modificados
-Esto seguún ubicación dada en la línea:
+
+Esto según ubicación dada en la línea:
 ~~~
 @./&1/ods_stag/
 ~~~
