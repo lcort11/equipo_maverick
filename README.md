@@ -4,7 +4,7 @@
 
 Este repositorio contiene un conjunto de scripts de copia por lotes (batch) que se utilizan para ejecutar, respaldar y restaurar datos para el aplicativo ODS (On-Premise Data Store).
 
-## Estructura del repositorio
+# Estructura del repositorio
 
 ~~~
 bog-gid-onpods-copy-batch/
@@ -28,7 +28,7 @@ F:
 └── README.md
 ~~~
 
-# Carpetas y rutas
+## Carpetas y rutas
   
 **SCRIPTS**: Contiene los scripts de copia por lotes.
 ~~~
