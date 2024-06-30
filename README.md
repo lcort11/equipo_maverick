@@ -28,7 +28,7 @@ bbog-gid-onpfdods-scripts-db/
 - Compilación de paquetes modificados
 Esto seguún ubicación dada en la línea:
 ~~~
-**@./&1/ods_stag/**
+@./&1/ods_stag/
 ~~~
  
  Ejemplo: 
