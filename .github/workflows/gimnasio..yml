@@ -2,12 +2,13 @@ name: Taller Mavericks Matrix
 run-name: Deploy to ${{ github.actor }}
 
 on: 
-
+  workflow_dispatch:
+  
 defaults:
   run: 
     shell: bash
 
-  workflow_dispatch:
+  
     inputs:
       NUMERO_IDENTIFICACION:
         required: true
