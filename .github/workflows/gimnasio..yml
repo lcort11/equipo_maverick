@@ -95,7 +95,7 @@ jobs:
 
           echo "Sede seleccionada: $sede_seleccionada"
           echo "sede=$sede_seleccionada" >> $GITHUB_OUTPUT
-        shell: bash
+
 
       - name: Imprimir descripción del gimnasio
         if: ${{ matrix.SEDE == strategy.matrix.SEDE[-1] }}
