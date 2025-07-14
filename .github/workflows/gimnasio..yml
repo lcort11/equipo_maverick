@@ -1,0 +1,111 @@
+name: Taller Mavericks Matrix
+run-name: Deploy to ${{ github.actor }}
+
+on: 
+  workflow_dispatch:
+    inputs:
+      NUMERO_IDENTIFICACION:
+        required: true
+        type: number  
+        description: "Digita tu número de identificación"
+      NOMBRE:
+        required: true
+        type: string  
+        description: "Digita tu Nombre"
+      SEXO:
+        required: true
+        type: string  
+        description: "Digita tu sexo"
+      EDAD:
+        required: true
+        type: number  
+        description: "Digita tu edad"
+      
+      SEDE:
+        description: "Selecciona las sedes (formato JSON: [\"Sur\", \"Norte\"])"
+        required: true
+        type: string
+
+jobs:
+  sedes_disponibles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    strategy: 
+      matrix: 
+        SEDE: ${{ fromJSON(inputs.SEDE) }}
+      fail-fast: false
+
+    outputs:
+      sede_seleccionada: ${{ steps.seleccionar_sede.outputs.sede }}
+
+    steps:
+      - name: Verificar disponibilidad de sede ${{ matrix.SEDE }}
+        id: verificar
+        continue-on-error: true
+        run: |
+          sede="${{ matrix.SEDE }}"
+          valor=$(( RANDOM % 2 ))
+
+          echo "Verificación de $sede" >> $GITHUB_STEP_SUMMARY
+          if [ $valor -eq 1 ]; then 
+            echo "✅ $sede está disponible" >> $GITHUB_STEP_SUMMARY
+            echo "disponible=true" >> $GITHUB_OUTPUT
+            echo "sede=$sede" >> $GITHUB_OUTPUT
+          else
+            echo "❌ $sede no está disponible" >> $GITHUB_STEP_SUMMARY
+            echo "disponible=false" >> $GITHUB_OUTPUT
+            echo "sede=$sede" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+      - name: Guardar resultados de disponibilidad
+        id: guardar
+        run: |
+          # Guardamos en un archivo temporal los resultados para cada sede
+          echo "${{ matrix.SEDE }}:${{ steps.verificar.outputs.disponible }}" >> resultados.txt
+        shell: bash
+
+      - name: Esperar a que terminen todas las verificaciones
+        if: ${{ matrix.SEDE == strategy.matrix.SEDE[-1] }}
+        run: |
+          echo "Todas las sedes verificadas"
+          cat resultados.txt
+        shell: bash
+
+      - name: Seleccionar sede disponible
+        id: seleccionar_sede
+        if: ${{ matrix.SEDE == strategy.matrix.SEDE[-1] }}
+        run: |
+          # Leer el archivo con resultados
+          sede_seleccionada=""
+          while IFS=: read -r sede disponible; do
+            if [[ "$disponible" == "true" ]]; then
+              sede_seleccionada=$sede
+              break
+            fi
+          done < resultados.txt
+
+          if [ -z "$sede_seleccionada" ]; then
+            echo "No hay sedes disponibles."
+            exit 1
+          fi
+
+          echo "Sede seleccionada: $sede_seleccionada"
+          echo "sede=$sede_seleccionada" >> $GITHUB_OUTPUT
+        shell: bash
+
+      - name: Imprimir descripción del gimnasio
+        if: ${{ matrix.SEDE == strategy.matrix.SEDE[-1] }}
+        run: |
+          declare -A descripciones
+          descripciones["Sur"]="Gimnasio Sur: Equipado con máquinas modernas y área de pesas."
+          descripciones["Norte"]="Gimnasio Norte: Espacio amplio con clases grupales y piscina."
+          descripciones["Centro"]="Gimnasio Centro: Ubicado en el corazón de la ciudad, con entrenadores personales."
+
+          sede="${{ steps.seleccionar_sede.outputs.sede }}"
+          descripcion=${descripciones[$sede]}
+
+          echo "Descripción del gimnasio seleccionado ($sede):"
+          echo "$descripcion"
+          echo "$descripcion" >> $GITHUB_STEP_SUMMARY
+        shell: bash
