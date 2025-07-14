@@ -63,6 +63,7 @@ jobs:
         run: |
           # Guardamos en un archivo temporal los resultados para cada sede
           echo "${{ matrix.SEDE }}:${{ steps.verificar.outputs.disponible }}" >> resultados.txt
+          cat resultados.txt
         shell: bash
 
       - name: Esperar a que terminen todas las verificaciones
