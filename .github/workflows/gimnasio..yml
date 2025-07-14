@@ -2,6 +2,11 @@ name: Taller Mavericks Matrix
 run-name: Deploy to ${{ github.actor }}
 
 on: 
+
+defaults:
+  run: 
+    shell: bash
+
   workflow_dispatch:
     inputs:
       NUMERO_IDENTIFICACION:
@@ -20,7 +25,6 @@ on:
         required: true
         type: number  
         description: "Digita tu edad"
-      
       SEDE:
         description: "Selecciona las sedes (formato JSON: [\"Sur\", \"Norte\"])"
         required: true
@@ -64,14 +68,14 @@ jobs:
           # Guardamos en un archivo temporal los resultados para cada sede
           echo "${{ matrix.SEDE }}:${{ steps.verificar.outputs.disponible }}" >> resultados.txt
           cat resultados.txt
-        shell: bash
+
 
       - name: Esperar a que terminen todas las verificaciones
         if: ${{ matrix.SEDE == strategy.matrix.SEDE[-1] }}
         run: |
           echo "Todas las sedes verificadas"
           cat resultados.txt
-        shell: bash
+
 
       - name: Seleccionar sede disponible
         id: seleccionar_sede
@@ -109,4 +113,3 @@ jobs:
           echo "Descripción del gimnasio seleccionado ($sede):"
           echo "$descripcion"
           echo "$descripcion" >> $GITHUB_STEP_SUMMARY
-        shell: bash
