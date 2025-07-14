@@ -3,12 +3,6 @@ run-name: Deploy to ${{ github.actor }}
 
 on: 
   workflow_dispatch:
-  
-defaults:
-  run: 
-    shell: bash
-
-  
     inputs:
       NUMERO_IDENTIFICACION:
         required: true
@@ -30,6 +24,9 @@ defaults:
         description: "Selecciona las sedes (formato JSON: [\"Sur\", \"Norte\"])"
         required: true
         type: string
+defaults:
+  run: 
+    shell: bash
 
 jobs:
   sedes_disponibles:
