@@ -1,0 +1,18 @@
+{
+  "Centro": {
+    "plan": "Plan Básico",
+    "precio": 100
+  },
+  "Norte": {
+    "plan": "Plan Premium",
+    "precio": 200
+  },
+  "Sur": {
+    "plan": "Plan Intermedio",
+    "precio": 150
+  },
+  "Chia": {
+    "plan": "Plan Estándar",
+    "precio": 120
+  }
+}

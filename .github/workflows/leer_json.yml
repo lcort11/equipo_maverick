@@ -1,0 +1,15 @@
+name: Leer JSON
+
+on:
+  [push]
+
+jobs: 
+  print-json: 
+    name: Imprimir JSON
+    runs-om: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+      
+      - name: Mostrar Contenido JSON
+        echo: cat plnaes.json
