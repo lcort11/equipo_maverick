@@ -13,3 +13,6 @@ jobs:
       
       - name: Mostrar Contenido JSON
         run: cat planes_sedes.json >> $GITHUB_STEP_SUMMARY
+      
+      - name: Valor especifico de JSON
+        run: jq -r '.Centro' planes_sedes.json >> $GITHUB_STEP_SUMMARY
