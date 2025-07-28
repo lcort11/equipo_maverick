@@ -6,10 +6,10 @@ on:
 jobs: 
   print-json: 
     name: Imprimir JSON
-    runs-om: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v4
       
       - name: Mostrar Contenido JSON
-        echo: cat plnaes.json
+        run: cat planes.json
